@@ -67,10 +67,7 @@ namespace CellularAutomata
             {
                 for (int j = 0; j < Space.Size; j++)
                 {
-                    if (Space.Get(i, j).Value > 0)
-                    {
-                        writer.WriteLine($"{i} {j} {Space.Size} {Space.Get(i, j).Value}");
-                    }
+                    writer.WriteLine($"{i} {j} {Space.Size} {Space.Get(i, j).Value}");
                 }
             }
         }
